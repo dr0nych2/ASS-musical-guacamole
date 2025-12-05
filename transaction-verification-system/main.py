@@ -28,7 +28,7 @@ def display_system_state(state, config, step):
     print('═' * 100)
 
     # БУФЕР
-    print("📦 БУФЕР (Д10З2 - FIFO):")
+    print("БУФЕР (Д10З2 - FIFO):")
     buffer_count = len(state['buffer'])
     buffer_capacity = config['buffer_capacity']
 
@@ -59,7 +59,7 @@ def display_system_state(state, config, step):
 
     # ПАКЕТНАЯ ОБРАБОТКА (Д2Б5)
     if state['current_packet_source']:
-        print(f"\n📦 АКТИВНЫЙ ПАКЕТ (Д2Б5 - приоритет по источнику):")
+        print(f"\nАКТИВНЫЙ ПАКЕТ (Д2Б5 - приоритет по источнику):")
         print(f"   Источник: {state['current_packet_source']} (самый приоритетный в буфере)")
         packet_size = len(state['current_packet'])
 
@@ -198,7 +198,7 @@ def display_automated_results(sim, config):
 
 '''def display_economic_analysis(config, utilization, rejection_rate):
     print("\n" + "═" * 100)
-    print("💰 ЭКОНОМИЧЕСКОЕ ОБОСНОВАНИЕ")
+    print("ЭКОНОМИЧЕСКОЕ ОБОСНОВАНИЕ")
     print("═" * 100)
 
     # Стоимость компонентов (примерные цены)
@@ -264,7 +264,7 @@ def main():
     display_header()
 
     print(f"\n{'─' * 50}")
-    print("🔍 РЕЖИМ 1: ПОШАГОВЫЙ (ОД3 - временные диаграммы)")
+    print("РЕЖИМ 1: ПОШАГОВЫЙ (ОД3 - временные диаграммы)")
     print("Команды: Enter - следующий шаг, q - выход, a - автоматический режим")
     print(f"{'─' * 50}")
 
@@ -339,9 +339,9 @@ def main():
     with open('simulation_results.json', 'w') as f:
         json.dump(results, f, indent=2)
 
-    print(f"\n💾 Результаты сохранены в simulation_results.json")
+    print(f"\nРезультаты сохранены в simulation_results.json")
     print("=" * 100)
-    print("✅ Программа успешно завершена!")
+    print("Программа успешно завершена!")
     print("=" * 100)
 
 
