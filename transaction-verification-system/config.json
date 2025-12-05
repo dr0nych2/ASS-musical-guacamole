@@ -1,0 +1,38 @@
+{
+  "simulation_time": 1000.0,
+  "buffer_capacity": 5,
+  "sources": [
+    {
+      "id": "S1",
+      "priority": 1,
+      "lambda": 0.5
+    },
+    {
+      "id": "S2",
+      "priority": 2,
+      "lambda": 0.4
+    },
+    {
+      "id": "S3",
+      "priority": 3,
+      "lambda": 0.3
+    }
+  ],
+  "servers": [
+    {
+      "id": "Server1",
+      "min_time": 1.0,
+      "max_time": 3.0
+    },
+    {
+      "id": "Server2",
+      "min_time": 2.0,
+      "max_time": 4.0
+    },
+    {
+      "id": "Server3",
+      "min_time": 1.0,
+      "max_time": 3.0
+    }
+  ]
+}
